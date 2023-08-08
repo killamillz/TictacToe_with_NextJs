@@ -1,12 +1,16 @@
-import React from 'react'
+'use client'
+
+import { useState } from "react"
 
 type SquareTypes = {
      value: String
 }
 
-const  Square = ({value}: SquareTypes) => {
+const  Square = () => {
+     const [value, setValue] = useState('')
+
     const handleClick = () =>{
-          console.log("I was clicked")
+          setValue('X')
     }
 
   return (
