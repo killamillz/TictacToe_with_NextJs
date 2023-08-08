@@ -3,15 +3,11 @@
 import { useState } from "react"
 
 type SquareTypes = {
-     value: String
+     value: String | null
 }
 
-const  Square = () => {
-     const [value, setValue] = useState('')
+const  Square = ({value}: SquareTypes) => {
 
-    const handleClick = () =>{
-          setValue('X')
-    }
 
   return (
      <>
