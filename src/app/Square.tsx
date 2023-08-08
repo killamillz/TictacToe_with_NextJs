@@ -3,15 +3,16 @@
 import { useState } from "react"
 
 type SquareTypes = {
-     value: String | null
+     value: String | null,
+     onSquareClick: () => void
 }
 
-const  Square = ({value}: SquareTypes) => {
+const  Square = ({value, onSquareClick}: SquareTypes) => {
 
 
   return (
      <>
-          <button onClick={handleClick}>{value}</button>
+          <button>{value}</button>
      </>
   )
 }
